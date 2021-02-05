@@ -3,7 +3,7 @@
 In this example, we perform a random search for the maximum of a function. 
 The `funcs.py` file contains the function (shown below) we are trying to maximize.
 
-<img src="https://latex.codecogs.com/svg.latex?f(x)=-4x^2 + 3x - 4" title="f(x)=-4x^2 + 3x - 4">
+<img src="https://latex.codecogs.com/svg.latex?f(x)=-4x^2+3x-4" title="f(x)=-4x^2 + 3x - 4">
 
 Though this could have been included in `solve.py`, it is important to demonstrate an external function being called with `mpi4py`. The idea is that users can setup one file with all of the parallelization and other files that actually contain the nuts and bolts of what they want to accomplish. 
 
