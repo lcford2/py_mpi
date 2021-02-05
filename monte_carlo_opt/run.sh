@@ -1,5 +1,6 @@
 
-mpirun -n 1 python solve.py
-mpirun -n 2 python solve.py
-mpirun -n 3 python solve.py
-mpirun -n 4 python solve.py
+for nprocs in 1 2 3 4
+do
+    printf "\n$ mpirun -n %d python solve.py\n" $nprocs
+    mpiexec -n $nprocs python solve.py
+done
